@@ -1,1 +1,0 @@
-# k-vernooy.github.io
