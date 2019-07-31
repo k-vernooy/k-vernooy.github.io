@@ -17,12 +17,19 @@ body {
 /* ==================
    For the Navbar:
 ================== */
+#gitlink {
+    display: block;
+    width: 170px;
+    height: 170px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
 #gitCont {
-    filter: drop-shadow(0px 2px 14px rgba(0,0,0,0.5));
     position: fixed;
     right: 0;
     z-index: 12;
     transition: .2s;
+    filter: drop-shadow(0px 4px 18px rgba(0,0,0,0.6));
 }
 
 #gitCont:hover {
@@ -34,7 +41,7 @@ body {
     width: 170px;
     height: 170px;
     background-image: url("../images/logos/octocat.png");
-    background-color: #454954;
+    background-color: #424550;
     background-position: right top;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 100%, 100% 0);
@@ -79,7 +86,8 @@ body {
     background-color: rgb(60, 147, 172);
     height: 240px;
     box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.493);
-    z-index: 10;
+    z-index: 8;
+    position: relative;
 }
 
 #main-title {
@@ -102,4 +110,14 @@ body {
     z-index: 1;
     height: 300px;
     background-color: rgb(119, 119, 119);
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.493);
+
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    background-color: black;
+    width: 50%;
+    height: inherit;
 }
