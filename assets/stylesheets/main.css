@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --main-color: linear-gradient(rgb(92, 116, 194),rgb(191, 215, 250));
+}
+
 @font-face {
     font-family: 'Avenir Light';
     src: url('../fonts/avenir/avenir-light.otf');
@@ -18,9 +22,9 @@ body {
     text-align: center;
 }
 
-:root {
-    --main-color: linear-gradient(rgb(92, 116, 194),rgb(191, 215, 250));
-}
+a { 
+    color: inherit; 
+} 
 
 /* ==================
    For the Navbar:
@@ -173,9 +177,9 @@ footer {
 ===================================*/
 .mainStrip {
     position: relative;
-    z-index: 2;
-    height: 300px;
-    background-color: rgb(119, 119, 119);
+    z-index: 3;
+    height: 400px;
+    background-color: rgb(182, 182, 182);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.593);
 
 }
@@ -183,7 +187,49 @@ footer {
 .right {
     position: absolute;
     right: 0px;
-    background-color: black;
+    background-color: rgb(182, 182, 182);
     width: 50%;
     height: inherit;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(182, 182, 182);
+    width: 50%;
+    height: inherit;
+}
+
+#mountains {
+    margin:0;
+    padding:0;
+}
+
+/* =================================
+   For the buttons
+===================================*/
+
+.buttonStyle {
+    width: 17%;
+    height: 45px;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    border: 2px white solid;
+    font-size: 100%;
+    font-family: 'Avenir Light';
+    color: white;
+    background-color: rgba(0, 59, 107, 0.2);
+    cursor: pointer;
+    transition: .13s
+}
+
+.buttonStyle:hover {
+    background-color:rgba(0, 74, 134, 0.493);
+    transition: .13s;
+    box-shadow: 1px 2px -6px rgba(0,0,0,.2)
+}
+
+#gitButton {
+    position: relative;
+    top: 30px;
 }
