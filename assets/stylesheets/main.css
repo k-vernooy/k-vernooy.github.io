@@ -26,6 +26,10 @@ a {
     color: inherit; 
 } 
 
+p:before {
+    content: "   ";
+}
+
 /* ==================
    For the Navbar:
 ================== */
@@ -107,8 +111,13 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
 .barCont {
     display: inline-block
+}
+
+#contbumper {
+    width: 170px;
 }
 
 #cornerTitle {
@@ -120,6 +129,22 @@ a {
     top: 15px;
     left: 25px;
     margin-right: 8%;
+    animation-name: logofade;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .3s;
+    animation-fill-mode: both;
+}
+
+@keyframes logofade {
+    from {
+        transform:translate(-200px,0px);
+        opacity: 0;
+    }
+    to {
+        transform:translate(0px,0px);
+        opacity: 1;
+    }
 }
 
 /* ===========================
@@ -180,15 +205,15 @@ footer {
     position: relative;
     z-index: 3;
     height: 400px;
-    background-color: rgb(182, 182, 182);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.593);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.293);
 
 }
 
 .right {
     position: absolute;
     right: 0px;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(255, 255, 255);
     width: 50%;
     height: inherit;
 }
@@ -196,7 +221,7 @@ footer {
 .left {
     position: absolute;
     left: 0px;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(255, 255, 255);
     width: 50%;
     height: inherit;
 }
@@ -227,8 +252,8 @@ footer {
 
 .buttonStyle:hover {
     background-color:rgba(0, 74, 134, 0.493);
-    transition: all ease .13s;
-    box-shadow: inset 0 0 18px rgba(0,0,0,.2);
+    transition: all ease .33s;
+    box-shadow: 1px 2px 12px rgba(0,0,0,.2);
     top: 2px;
 }
 
@@ -238,4 +263,6 @@ footer {
 }
 #gitButton:hover {
     top: 28px;
+    background-color: rgba(255, 255, 255, 0.575);
+    color: black;
 }
