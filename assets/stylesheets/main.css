@@ -98,7 +98,7 @@ p:before {
 
 .barItem:hover + .under {
     width: 70%;
-    background-color: rgb(78, 90, 255);
+    background-color: rgb(170, 43, 255);
     transition: .2s;
 }
 
@@ -113,7 +113,10 @@ p:before {
     margin-left: auto;
     margin-right: auto;
 }
-
+.under.active {
+    width: 70%;
+    background-color: rgb(170, 43, 255);
+}
 .barCont {
     display: inline-block
 }
