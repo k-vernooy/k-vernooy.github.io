@@ -92,13 +92,12 @@ p:before {
 .barItem:hover { 
     color: rgb(207, 171, 207);
     transition: .3s ease;
-    box-shadow: 0 14px 20px -25px rgb(0, 0, 0);
 }
 
 .barItem:hover + .under {
     opacity: 1;
     width: 70%;
-    background-color: rgb(126, 0, 165);
+    background-color: rgb(255, 255, 255);
     transition: .2s;
 }
 
@@ -114,11 +113,13 @@ p:before {
     margin-left: auto;
     margin-right: auto;
 }
+
 .under.active {
     opacity: 1;
     width: 70%;
-    background-color: rgb(170, 43, 255);
+    background-color: rgb(255, 255, 255);
 }
+
 .barCont {
     display: inline-block
 }
@@ -270,9 +271,21 @@ footer {
 #gitButton {
     position: relative;
     top: 30px;
+    min-width: 120px;
 }
 #gitButton:hover {
     top: 28px;
     background-color: rgba(255, 255, 255, 0.575);
     color: black;
+}
+
+.third {
+    width: 30%;
+    background-color: black;
+    display:inline-block;
+    height: 200px;
+}
+
+#thirdsStrip {
+    height: 200px;
 }
