@@ -68,11 +68,11 @@ p:before {
 #navBar {
     height: 82px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.493);
+    background-color: rgba(162, 0, 211, 0);
     position: fixed;
     z-index: 10;
     overflow: hidden;
+    color: white;
 }
 
 #navBumper {
@@ -81,17 +81,16 @@ p:before {
 
 .barItem {
     display: inline-block;
-    font-size: 22px;
+    font-size: 18px;
     padding: 26px;
-    padding-right: 34px;
-    padding-left: 34px;
-    background-color: rgb(255, 255, 255);
+    padding-right: 22px;
+    padding-left: 22px;
     cursor: pointer;
     transition: .3s ease;
     padding-bottom: 10px;
 }
 .barItem:hover { 
-    color: grey;
+    color: rgb(207, 171, 207);
     transition: .3s ease;
     box-shadow: 0 14px 20px -25px rgb(0, 0, 0);
 }
@@ -99,7 +98,7 @@ p:before {
 .barItem:hover + .under {
     opacity: 1;
     width: 70%;
-    background-color: rgb(170, 43, 255);
+    background-color: rgb(126, 0, 165);
     transition: .2s;
 }
 
@@ -185,11 +184,12 @@ footer {
     padding-right: 0px;
     color: white;
     background-image: var(--main-color);
-    box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.17);
     z-index: 4;
     position: relative;
     padding-bottom: 0px;
+    transform: translate(0px,-82px);
     margin-bottom: 0;
+    padding-top: 102px;
 
 }
 
@@ -215,7 +215,6 @@ footer {
     z-index: 3;
     height: 400px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.293);
 
 }
 
@@ -240,7 +239,6 @@ footer {
     padding:0;
     z-index: 100;
     display: block;
-    box-shadow: 0px 18px 30px -15px rgba(0,0,0,.6);
 }
 
 /* =================================
