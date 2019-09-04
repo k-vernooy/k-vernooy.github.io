@@ -12,10 +12,25 @@
     src: url('../fonts/avenir/avenir-light.otf');
 }
 
+@font-face {
+    font-family: 'Soleil Light';
+    src: url('../fonts/soleil/Soleil-Light.otf');
+}
+
+@font-face {
+    font-family: 'Soleil Bold';
+    src: url('../fonts/soleil/Soleil-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Soleil Book';
+    src: url('../fonts/soleil/Soleil-Book.otf');
+}
+
 body {
     /* text-align: center; */
     font-family: 'Avenir Light';
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 #center {
@@ -294,13 +309,24 @@ footer {
 }
 
 .third {
-    width: 30%;
-    background-color: black;
+    width: 24%;
+    background-color: rgb(255, 255, 255);
     display:inline-block;
     height: 200px;
+    margin-right: 2%;
 }
 
 #thirdsStrip {
     height: 200px;
     transform:translate(0px,-82px);
+}
+
+.thirdHeader {
+    font-family: "Soleil Book";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.thirdImage {
+    margin-top: 35px;
 }
