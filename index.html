@@ -15,7 +15,23 @@
 
     </head>
     <body>
-        
+        <script>
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+                if (scroll >= 100) {
+                    $(".navBar").addClass("whiteBar");
+                    $(".under").each(function() {
+                        $( this ).addClass( "white" );
+                    });
+                }
+                else {
+                    $(".navBar").removeClass("whiteBar");
+                    $(".under").each(function() {
+                        $( this ).removeClass( "white" );
+                    });
+                }
+            }); 
+    </script>
         <div id='page-container'>
             <div id='footer-wrap'>
                 <!-- <div id='gitCont'>
@@ -24,7 +40,7 @@
                     </a>
                 </div> -->
 
-                <div id='navBar'>
+                <div class='navBar'>
                     <a href='index.html'> 
                         <p id='cornerTitle'>k-vernooy</p>
                     </a>
