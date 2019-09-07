@@ -30,7 +30,7 @@
 
 body {
     /* text-align: center; */
-    font-family: 'Avenir Light';
+    font-family: 'Soleil Light';
     background-color: rgb(254,88,98);
 }
 
@@ -321,8 +321,8 @@ footer {
 #thirdsStrip {
     height: 350px;
     /* transform:translate(0px,-82px); */
-    color: black;
-    background-image: linear-gradient(180deg, #ffffff,#008aa0);
+    color: white; 
+    background-image: linear-gradient(180deg, rgb(32, 0, 45),#474ab5);
 }
 
 .thirdHeader {
@@ -333,4 +333,5 @@ footer {
 
 .thirdImage {
     margin-top: 35px;
+    filter: invert(1);
 }
