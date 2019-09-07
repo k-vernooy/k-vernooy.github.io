@@ -31,7 +31,7 @@
 body {
     /* text-align: center; */
     font-family: 'Soleil Light';
-    background-color: rgb(254,88,98);
+    /* background-color: rgb(254,88,98); */
 }
 
 #center {
@@ -50,36 +50,6 @@ p:before {
 /* ==================
    For the Navbar:
 ================== */
-#gitlink {
-    display: block;
-    width: 170px;
-    height: 170px;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-}
-
-#gitCont {
-    position: fixed;
-    right: 0;
-    z-index: 12;
-    transition: .2s;
-    filter: drop-shadow(0px 4px 18px rgba(0,0,0,0.6));
-}
-
-#gitCont:hover {
-    filter: drop-shadow(0px 4px 18px rgba(0,0,0,0.7));
-    transition: .2s;
-}
-
-#github {
-    width: 170px;
-    height: 170px;
-    background-image: url("../images/logos/octocat.png");
-    background-color: #424550;
-    background-position: right top;
-    background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.1))
-}
 
 .navBar {
     height: 82px;
