@@ -322,7 +322,7 @@ footer {
     height: 350px;
     /* transform:translate(0px,-82px); */
     color: white; 
-    background-image: linear-gradient(180deg, rgb(32, 0, 45),#474ab5);
+    background-color: rgb(56, 0, 78);
 }
 
 .thirdHeader {
