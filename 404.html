@@ -16,21 +16,21 @@
     </head>
     <body>
         <script>
-            $(window).scroll(function() {    
-                var scroll = $(window).scrollTop();
-                if (scroll >= 70) {
-                    $(".navBar").addClass("whiteBar");
-                    $(".under").each(function() {
-                        $( this ).addClass( "white" );
-                    });
-                }
-                else {
-                    $(".navBar").removeClass("whiteBar");
-                    $(".under").each(function() {
-                        $( this ).removeClass( "white" );
-                    });
-                }
-            }); 
+            // $(window).scroll(function() {    
+            //     var scroll = $(window).scrollTop();
+            //     if (scroll >= 70) {
+            //         $(".navBar").addClass("whiteBar");
+            //         $(".under").each(function() {
+            //             $( this ).addClass( "white" );
+            //         });
+            //     }
+            //     else {
+            //         $(".navBar").removeClass("whiteBar");
+            //         $(".under").each(function() {
+            //             $( this ).removeClass( "white" );
+            //         });
+            //     }
+            // }); 
     </script>
     <style>
         #fourbar {
@@ -45,7 +45,23 @@
             font-size: 130px;
         }
 
+        .link  {
+            display: inline-block;
+            width: 150px;
+            height: 70px;
+            border: 2px solid black;
+            margin-right: 5%;
+            line-height: 70px;
+        }
+        #linkstrip {
+            text-align: center;
+        }
+    
+
     </style>
+    <script>
+        console.log(document.referrer);
+    </script>
         <div id='page-container'>
             
             <div id='footer-wrap'>
@@ -93,15 +109,15 @@
                     <h1>404</h1>
                     <h3 style="margin-top:15px">Page not found. Try one of the below links:</h3>
                 </div>
-                <div id='linkstript'>
+                <div id='linkstrip'>
                     <div class='link'>
                         <h3>Home</h3>
                     </div>
                     <div class='link'>
-                        <h3>Home</h3>
+                        <h3>Programming</h3>
                     </div>
                     <div class='link'>
-                        <h3>Home</h3>
+                        <h3>Science</h3>
                     </div>
                 </div>
             </div>
