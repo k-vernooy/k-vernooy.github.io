@@ -13,11 +13,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="assets/js/parallax.js-1.4.2/parallax.js"></script>
 
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+
+        <script>hljs.initHighlightingOnLoad();</script>
+
     </head>
     <body>
         <style>
             body {
                 background-color:white;
+                font-size: 18px;
             }
 
             #bannerMain {
@@ -29,7 +35,6 @@
             #bannerMain > p {
                 width: 50%;
                 margin: 30px auto;
-                font-size: 18px;
             }
 
             #bannerMain > p > a {
@@ -41,6 +46,17 @@
                 font-family: "Soleil Book";
             }
 
+            h2 {
+                font-size: 40px;
+                margin: 25px;
+                font-family: "Soleil Book";
+            }
+
+            h3 {
+                font-size: 24px;
+                margin: 25px;
+                font-family: "Soleil Book";
+            }
 
             .page {
                 width: 180px;
@@ -48,6 +64,25 @@
                 background-color: grey;
                 display: inline-block;
                 margin-right: 5%;
+            }
+
+            .section {
+                /* min-height: 200px; */
+                margin: 50px;
+                background-color: rgb(255, 255, 255);
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ul {
+                text-align: left;
+            }
+            li > a {
+                color: blue;
+            }
+            pre {
+                text-align: left;
             }
         </style>
         <div id='page-container'>
@@ -96,7 +131,51 @@
                 <div id='center'>
                     <div id='bannerMain'>
                         <h1>clplot</h1>
-                        <p>The following is strictly documentation on the command line chart generator cplot. For examples and the full project details, see the <a href="../programming/clplot">project post</a>.</p>
+                        <p>The following is documentation on the command line chart generator <i>cplot</i>. For examples and the full project details, see the <a href="../programming/clplot">project post</a>.</p>
+                    </div>
+                    <div id='content'>
+                        
+                        <div class='section'>
+                            <h2 class='header'>Description</h2>
+                            <p>An ascii chart generator for the terminal written in C++.</p>
+                        </div>
+
+                        <div class='section'>
+                            <h2 class='header'>Installation</h2>
+                            <h3>Git install:</h3>
+        <div style="background: #f8f8f8; overflow:auto;width:auto;border:none;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">git clone https://github.com/k-vernooy/clplot
+make
+make install
+clplot -d <span style="color: #ce5c00; font-weight: bold">[</span>1,4,9,16,25<span style="color: #ce5c00; font-weight: bold">]</span> -c red
+        </pre></div>
+        
+                            <h3 id="brewinstall">Brew install:</h3>
+                            <p>Coming upon project completion...</p>
+                        </div>
+                        
+                       
+
+                        <div class='section'>
+                            <h2 id="usage">Usage</h2>
+                            <p><b>clplot</b> comes with many options for style, customization, and chart types.</p>
+
+                            <h3 id="options">Options:</h3>
+
+                            <p>The below chart has basic information about command line options that can be passed to clplot. For full documentation on flags, see the <a href="https://k-vernooy.github.io/projects/clplot">documentation site</a>.  </p>
+                        </div>
+
+                        <div class='section'>
+                            <h2>See also</h2>
+                            <ul>
+                                <li><a href="github.com/k-vernooy/fast">fast</a>: an implementation of cplot that monitors internet speed.</li>
+                                <li><a href="github.com/k-vernooy/stonks">stonks</a>: a stock monitoring terminal app that uses clplot to give graphs.</li>
+                                <li><a href="https://k-vernooy.github.io/projects/clplot">k-vernooy.github.io/projects/clplot</a> - a page with full documentation and example usages and quick projects for clplot.</li>
+                            </ul>
+                        </div>
+                        <div class='section'>
+                            <h2 class='header'>Compatibility</h2>
+                            <p>As of now, only tested on macOS - should work on linux as well.</p>
+                        </div>
                     </div>
 				</div>
             </div>
