@@ -240,7 +240,7 @@ footer {
     padding:0;
     z-index: 100;
     display: block;
-    box-shadow: 0px 15px 30px -20px rgba(0,0,0,.5);
+    /* box-shadow: 0px 15px 30px -20px rgba(0,0,0,.5); */
 }
 
 /* =================================
@@ -292,7 +292,7 @@ footer {
     height: 350px;
     /* transform:translate(0px,-82px); */
     color: white; 
-    background-color: rgb(56, 0, 78);
+    background-color: rgb(36, 3, 49);
 }
 
 .thirdHeader {
