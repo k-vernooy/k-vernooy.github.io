@@ -28,6 +28,11 @@
     src: url('../fonts/soleil/Soleil-Book.otf');
 }
 
+@font-face {
+    font-family: 'Soleil Reg';
+    src: url('../fonts/soleil/Soleil-Regular.otf');
+}
+
 body {
     /* text-align: center; */
     font-family: 'Soleil Light';
@@ -52,7 +57,7 @@ p:before {
 ================== */
 
 .navBar {
-    height: 82px;
+    height: 70px;
     width: 100%;
     background-color: rgba(0,0,0,0);
     position: fixed;
@@ -60,6 +65,7 @@ p:before {
     overflow: hidden;
     color: white;
     transition: .2s;
+    padding-left: 50px;
 }
 
 .whiteBar {
@@ -67,14 +73,17 @@ p:before {
     color: black;
 }
 
+.whiteBar > .under.active {
+    background-color: black;
+}
 
 #navBumper {
-    height: 82px;
+    height: 70px;
 }
 
 .barItem {
     display: inline-block;
-    font-size: 20px;
+    font-size: 19px;
     padding: 26px;
     padding-right: 32px;
     padding-left: 32px;
@@ -82,6 +91,7 @@ p:before {
     /* transition: .3s ease; */
     padding-bottom: 10px;
 }
+
 .barItem:hover { 
     color: rgb(207, 171, 207);
     transition: .3s ease;
@@ -89,7 +99,7 @@ p:before {
 
 .barItem:hover + .under {
     opacity: 1;
-    width: 70%;
+    width: 50%;
     background-color: rgb(255, 255, 255);
     transition: .2s;
 }
@@ -107,16 +117,20 @@ p:before {
     margin-right: auto;
 }
 
+.under.active.white {
+    background-color: black;
+}
+
 .barItem:hover + .under.white {
     opacity: 1;
-    width: 70%;
+    width: 40%;
     background-color: rgb(0, 0, 0);
     transition: .2s;
 }
 
 .under.active {
     opacity: 1;
-    width: 70%;
+    width: 40%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -126,33 +140,6 @@ p:before {
 
 #contbumper {
     width: 170px;
-}
-
-#cornerTitle {
-    text-shadow: 1px 2px 3px rgba(0,0,0,.1);
-    font-family: 'Source Code Pro', monospace;
-    font-size: 30px;
-    float: left;
-    position: relative;
-    top: 15px;
-    left: 25px;
-    margin-right: 8%;
-    animation-name: logofade;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: .3s;
-    animation-fill-mode: both;
-}
-
-@keyframes logofade {
-    from {
-        transform:translate(-200px,0px);
-        opacity: 0;
-    }
-    to {
-        transform:translate(0px,0px);
-        opacity: 1;
-    }
 }
 
 /* ===========================
@@ -195,16 +182,14 @@ footer {
 }
 
 #main-title {
-    text-shadow: 2px 4px 15px rgba(0,0,0,.5);
-    font-family: 'Source Code Pro', monospace;
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 15px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #tagline {
     font-size:20px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 
@@ -281,14 +266,15 @@ footer {
 }
 
 .third {
-    width: 24%;
+    width: 22%;
     background-color: rgba(255, 255, 255, 0);
     display:inline-block;
     height: 200px;
-    margin-right: 2%;
+    margin-right: 5%;
 }
 
 #thirdsStrip {
+    padding-top: 60px;
     height: 350px;
     /* transform:translate(0px,-82px); */
     color: white; 
