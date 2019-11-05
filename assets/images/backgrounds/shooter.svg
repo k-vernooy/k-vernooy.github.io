@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M 198.9 504.5 C 187.8 542.1 148.3 563.6 110.7 552.5 C 73.1 541.3 51.6 501.8 62.8 464.2 C 73.9 426.6 113.4 405.1 151 416.3 C 188.6 427.4 210.1 466.9 198.9 504.5 Z" id="c4bP13jo9J"></path><path d="M 405.9 22.4 L 517.2 110.6 L 184.3 530.6 L 73 442.5 L 405.9 22.4 Z" id="c18dhl2VgD"></path></defs>
+    <defs><path d="M 178.6 698 C 167.5 735.6 128 757.1 90.4 746 C 52.8 734.8 31.3 695.3 42.5 657.7 C 53.6 620.1 93.1 598.6 130.7 609.8 C 168.3 620.9 189.7 660.4 178.6 698 Z" id="a7fhFMiH8"></path><path d="M 554.7 2.5 L 666 90.7 L 164 724.1 L 52.7 636 L 554.7 2.5 Z" id="b1dH0v9MYx"></path><linearGradient id="gradientb1aUdMXk0j" gradientUnits="userSpaceOnUse" x1="580.88" y1="73.05" x2="205.53" y2="546.61"><stop style="stop-color: #2dbfff; stop-opacity: 0" offset="0%"></stop><stop style="stop-color: rgb(17, 160, 255); stop-opacity: 1" offset="100%"></stop></linearGradient></defs><g><g transform="matrix(0.1,0,0,0.1,263.7,300.4)"><g><use transform="matrix(1,0,0,1,2190.3,-2175.3)" xlink:href="#a7fhFMiH8" opacity="1" fill="rgb(17, 160, 255)" fill-opacity="1"></use><g><use transform="matrix(1,0,0,1,2190.3,-2175.3)" xlink:href="#a7fhFMiH8" opacity="1" fill-opacity="0" stroke="#26af07" stroke-width="0" stroke-opacity="1"></use></g></g><g><use transform="matrix(1,0,0,1,2190.3,-2175.3)" xlink:href="#b1dH0v9MYx" opacity="1" fill="url(#gradientb1aUdMXk0j)"></use></g></g></g>
+    <ellipse cx="601.8" cy="333" fill="url(#diagonalHatch)" rx="32.8" ry="33"/>
+    <pattern id="diagonalHatch" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="10" y2="0" style="stroke:rgb(17, 160, 255); stroke-width:8" />
+    </pattern>
+    <g>
+        <g transform="matrix(0.1,0,0,0.1,263.7,300.4)">
+            <g>        
+                <use fill="rgb(17, 160, 255)" fill-opacity="1" opacity="1" transform="matrix(1,0,0,1,-1579.7,-1695.3)" xlink:href="#a7fhFMiH8"/>       
+                <g>
+                    <use fill-opacity="0" opacity="1" stroke="#26af07" stroke-opacity="1" stroke-width="0" transform="matrix(1,0,0,1,-1579.7,-1695.3)" xlink:href="#a7fhFMiH8"/>
+                </g>
+            </g>
+            <g>  
+                <use fill="url(#gradientb1aUdMXk0j)" opacity="1" transform="matrix(1,0,0,1,-1579.7,-1695.3)" xlink:href="#b1dH0v9MYx"/>     
+            </g>
+        </g>
+    </g>
+</svg>
