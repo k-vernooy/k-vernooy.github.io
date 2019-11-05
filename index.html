@@ -10,28 +10,11 @@
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="assets/js/parallax.js-1.4.2/parallax.js"></script>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/navbar.js"></script>
     </head>
     <body>
-        <script>
-            $(window).scroll(function() {    
-                var scroll = $(window).scrollTop();
-                if (scroll >= 70) {
-                    $(".navBar").addClass("whiteBar");
-                    $(".under").each(function() {
-                        $( this ).addClass( "white" );
-                    });
-                }
-                else {
-                    $(".navBar").removeClass("whiteBar");
-                    $(".under").each(function() {
-                        $( this ).removeClass( "white" );
-                    });
-                }
-            }); 
-    </script>
         <div id='page-container'>
             <a href='https://github.com/k-vernooy/' class="github-corner" aria-label="View source on GitHub">
                 <svg width="100" height="100" viewBox="0 0 250 250" style="fill:rgb(255, 255, 255); color:#9d2cd1; position: absolute; top: 0; border: 0; right: 0;z-index:13" aria-hidden="true" >
@@ -85,7 +68,7 @@
                     <a href="pages/projects.html">
                         <div class='barCont'>
                             <div class='barItem'>
-                                <span>projects</span>
+                                <span>Projects</span>
                             </div>
                             <div class='under'></div>
                         </div>
