@@ -1,3 +1,7 @@
+:root {
+    --blue: rgb(40, 187, 255);
+}
+
 body {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -19,11 +23,13 @@ h1 {
     margin-right: 20px;
     margin-left: 20px;
     background-color: rgb(0, 0, 0);
-    border: 6px solid rgb(255, 255, 255);
+    border: 6px solid white;
     box-shadow: 7px 7px 0px rgb(40, 187, 255);
     display: inline-block;
     cursor: pointer;
-    transition: .2s;
+    transition: .2s; 
+    position: relative;
+
 }
 
 .projectThumb:hover {
@@ -32,26 +38,39 @@ h1 {
     transform: translate(0, -2px);
 }
 
+.projectThumb:before {  
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 140px;
+    /* opacity: 0; */
+    left: 0;
+    background-color: rgba(208, 234, 254, 0.93);
+    transition:.2s;
+}
+
+
 h3 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     line-height: 120px;
     transition: .2s;
+    z-index:1000;
+    position:absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .projectThumb:hover > h3 {
-    color: black;
+    color: rgb(255, 255, 255);
 }
+
+.projectThumb:hover:before {
+    background-color: rgba(255, 255, 255, 0.082);
+}
+
 
 #tetrisThumb {
-    background-image: url("../images/projects/thumbnails/tetris.png");
-    background-repeat: no-repeat;
-    background-position: -2px 0px;
-    background-size: 110%;
-
-}
-
-#tetrisThumb:hover {
-    background-image: url("../images/projects/thumbnails/white.png");
+    background: url("../images/projects/thumbnails/tetris.png");
     background-repeat: no-repeat;
     background-position: -2px 0px;
     background-size: 110%;
@@ -63,13 +82,6 @@ h3 {
     background-position: -2px 0px;
     background-size: 110%;
 
-}
-
-#clplotThumb:hover {
-    background-image: url("../images/projects/thumbnails/white.png");
-    background-repeat: no-repeat;
-    background-position: -2px 0px;
-    background-size: 110%;
 }
 
 #programmingSection {
