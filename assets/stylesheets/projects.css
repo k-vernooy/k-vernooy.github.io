@@ -5,6 +5,26 @@
 body {
     background-color: rgb(0, 0, 0);
     color: white;
+    background-image: url("../images/backgrounds/shooter.svg"); 
+    background-size: 80%; 
+    background-position-y: -90px;
+}
+
+@media only screen and (max-width: 950px) {
+    /* For desktop: */
+    body {
+        background-size: 100%;
+        background-position-y: -70px;
+        background-position-x: -80px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    /* For desktop: */
+    body {
+        background-size: 140%;
+        background-position-x: -280px;
+    }
 }
 
 #scrollSection {
@@ -45,7 +65,7 @@ h1 {
     height: 140px;
     /* opacity: 0; */
     left: 0;
-    background-color: rgba(208, 234, 254, 0.93);
+    background-color: rgba(255, 255, 255, 0.98);
     transition:.2s;
 }
 
