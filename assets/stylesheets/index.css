@@ -1,0 +1,62 @@
+
+#mountain-wrapper {
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: white;
+    background-image: linear-gradient(var(--color-b-dt), var(--color-a-dt));
+    z-index: 4;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-top: 100px;
+}
+
+#main-title {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+#tagline {
+    font-size:20px;
+    margin-bottom: 50px;
+}
+
+#mountains {
+    margin:0;
+    padding:0;
+    z-index: 100;
+    display: block;
+    width: 100%;
+}
+
+#title-section {
+    text-align: center;
+    margin-top: -5px;
+    position: relative;
+    z-index: 5;
+    padding-top: 60px;
+    height: 100vh;
+    color: white; 
+    background-color: var(--color-a-dt);
+}
+
+.fill-one {
+    fill: var(--color-a-dt);
+}
+
+.fill-two {
+    fill: var(--color-b-dt);
+}
+
+.fill-three {
+    fill: var(--color-c-dt);
+}
+
+.fill-four {
+    fill: var(--color-d-dt);
+}
+
+.fill-five {
+    fill: var(--color-e-dt);
+}
