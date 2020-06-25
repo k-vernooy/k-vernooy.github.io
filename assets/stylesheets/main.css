@@ -4,7 +4,11 @@
 }
 
 :root {
-    --main-color: linear-gradient(rgb(152, 33, 207),rgb(255, 255, 255));
+    --color-a-dt: rgb(1, 24, 28);
+    --color-b-dt: rgb(7, 92, 98);
+    --color-c-dt: rgb(11, 127, 131);
+    --color-d-dt: rgb(37, 179, 164);
+    --color-e-dt: rgb(129,195,188);
 }
 
 @font-face {
@@ -34,13 +38,7 @@
 }
 
 body {
-    /* text-align: center; */
     font-family: 'Soleil Light';
-    /* background-color: rgb(254,88,98); */
-}
-
-#center {
-    text-align: center;
 }
 
 a { 
@@ -48,9 +46,6 @@ a {
     text-decoration: none;
 } 
 
-/* ==================
-   For the Navbar:
-================== */
 
 .navBar {
     height: 70px;
@@ -84,7 +79,6 @@ a {
     padding-right: 32px;
     padding-left: 32px;
     cursor: pointer;
-    /* transition: .3s ease; */
     padding-bottom: 10px;
 }
 
@@ -134,156 +128,19 @@ a {
     display: inline-block
 }
 
-#contbumper {
-    width: 170px;
-}
 
-/* ===========================
-   For the footer:
-============================ */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 130px;       
-    background-color: black;
-    z-index:100;
-}
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-  
-#footer-wrap {
-    padding-bottom: 130px;
-}
-/* ===========================
-   For the top welcome section:
-============================ */
-
-#mainWelcome {
-    padding: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    color: white;
-    background-image: var(--main-color);
-    z-index: 4;
-    position: relative;
-    padding-bottom: 0px;
-    /* transform: translate(0px,-82px); */
-    margin-bottom: 0;
-    padding-top: 60px;
-
-}
-
-#main-title {
-    font-size: 70px;
-    margin-bottom: 15px;
-    margin-top: 50px;
-}
-
-#tagline {
-    font-size:20px;
-    margin-bottom: 50px;
-}
-
-
-/* =================================
-   For the generic following strips:
-===================================*/
-.mainStrip {
-    position: relative;
-    z-index: 3;
-    height: 400px;
-    background-color: rgb(255, 255, 255);
-
-}
-
-.right {
-    position: absolute;
-    right: 0px;
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    height: inherit;
-}
-
-.left {
-    position: absolute;
-    left: 0px;
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    height: inherit;
-}
-
-#mountains {
-    margin:0;
-    padding:0;
-    z-index: 100;
-    display: block;
-    /* box-shadow: 0px 15px 30px -20px rgba(0,0,0,.5); */
-}
-
-/* =================================
-   For the buttons
-===================================*/
-
-.buttonStyle {
-    width: 17%;
-    height: 45px;
-    outline: none;
-    background-color: rgba(0,0,0,0);
-    border: .17pc white solid;
-    font-size: 100%;
-    font-family: 'Avenir Light';
-    color: white;
-    background-color: rgba(0, 59, 107, 0.2);
-    cursor: pointer;
-    transition: all ease .13s;
-    position: relative;
-}
-
-.buttonStyle:hover {
-    background-color:rgba(0, 74, 134, 0.493);
-    transition: all ease .33s;
-    box-shadow: 1px 2px 12px rgba(0,0,0,.2);
-    top: 2px;
-}
-
-#gitButton {
-    position: relative;
-    top: 30px;
-    min-width: 120px;
-}
-#gitButton:hover {
-    top: 28px;
-    background-color: rgba(255, 255, 255, 0.575);
+button {
+    all: unset;
+    padding: 9px 13px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 5px;
     color: black;
+    cursor: pointer;
 }
 
-.third {
-    width: 22%;
-    background-color: rgba(255, 255, 255, 0);
-    display:inline-block;
-    height: 200px;
-    margin-right: 5%;
-}
-
-#thirdsStrip {
-    padding-top: 60px;
-    height: 350px;
-    /* transform:translate(0px,-82px); */
-    color: white; 
-    background-color: rgb(36, 3, 49);
-}
-
-.thirdHeader {
-    font-family: "Soleil Book";
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.thirdImage {
-    margin-top: 35px;
-    filter: invert(1);
+button.ghost {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
